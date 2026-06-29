@@ -1,0 +1,465 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">8.0 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">100.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Testing with a high-endurance athlete (marathon runner) requiring maximum carbohydrate loading and recovery nutrition with specific caloric targets (3500+ calories)</td>
+                <td class="prompt-inputs"><strong>Height:</strong> 180<br><strong>Weight:</strong> 75<br><strong>goal:</strong> Marathon preparation with carbohydrate loading and recovery nutrition targeting 3500+ calories<br><strong>restrictions:</strong> None</td>
+                <td class="criteria">• Meal plan totals 3500+ calories across all meals and snacks<br>• Includes high carbohydrate content (55-65% of total calories) appropriate for endurance athlete<br>• Contains 4-5 eating occasions (breakfast, lunch, dinner, and 1-2 snacks) formatted compactly<br>• Incorporates lean protein and healthy fats for recovery and satiety</td>
+                <td class="output"><pre># One-Day Marathon Preparation Meal Plan
+**Target: 3,500 calories | Macros: 525g carbs | 130g protein | 95g fat**
+
+---
+
+## BREAKFAST (7:00 AM) - 850 calories
+**Pre-training fuel**
+
+- Oatmeal: 100g dry (350 cal)
+- Banana: 150g (134 cal)
+- Honey: 30g (92 cal)
+- Whole milk: 250ml (160 cal)
+- Almonds: 20g (120 cal)
+
+**Macros:** 135g carbs | 15g protein | 12g fat
+
+---
+
+## MID-MORNING SNACK (10:00 AM) - 450 calories
+**During/post-short run**
+
+- White bread: 80g (200 cal)
+- Peanut butter: 30g (180 cal)
+- Banana: 100g (89 cal)
+- Sports drink: 250ml (50 cal)
+
+**Macros:** 65g carbs | 10g protein | 8g fat
+
+---
+
+## LUNCH (1:00 PM) - 900 calories
+**Main carb-loading meal**
+
+- Jasmine rice: 200g cooked (260 cal)
+- Chicken breast: 150g grilled (245 cal)
+- Olive oil: 15ml (135 cal)
+- Mixed vegetables (carrots, broccoli): 150g (50 cal)
+- Low-fat yogurt: 200g (100 cal)
+- Orange juice: 300ml (110 cal)
+
+**Macros:** 145g carbs | 45g protein | 18g fat
+
+---
+
+## AFTERNOON SNACK (4:00 PM) - 500 calories
+**Energy boost before evening workout**
+
+- Rice cakes: 60g (240 cal)
+- Banana: 150g (134 cal)
+- Honey: 20g (61 cal)
+- Apple juice: 200ml (94 cal)
+
+**Macros:** 120g carbs | 5g protein | 1g fat
+
+---
+
+## DINNER (7:00 PM) - 700 calories
+**Recovery and repair**
+
+- Pasta (whole wheat): 150g cooked (200 cal)
+- Ground turkey: 120g lean (220 cal)
+- Tomato sauce: 100g (25 cal)
+- Parmesan cheese: 20g (80 cal)
+- Olive oil: 10ml (90 cal)
+- Side salad with dressing: 85 cal
+
+**Macros:** 60g carbs | 50g protein | 38g fat
+
+---
+
+## EVENING SNACK (9:30 PM) - 100 calories
+**Sleep-friendly recovery**
+
+- Greek yogurt (plain): 150g (100 cal)
+
+**Macros:** 0g carbs | 5g protein | 0g fat
+
+---
+
+## DAILY TOTALS
+| Nutrient | Amount |
+|----------|--------|
+| **Calories** | **3,500** |
+| **Carbohydrates** | 525g (60%) |
+| **Protein** | 130g (15%) |
+| **Fat** | 95g (25%) |
+
+---
+
+## KEY NOTES FOR MARATHON PREP
+✓ **Carb timing:** Heavy carbs at breakfast, lunch, and snacks for glycogen storage  
+✓ **Hydration:** Drink 3-4 liters of water daily + electrolyte drink during training  
+✓ **Recovery window:** Yogurt snack provides casein protein for overnight muscle repair  
+✓ **Budget-friendly:** Uses affordable staples (rice, pasta, eggs, chicken, bananas)  
+✓ **Adaptable:** Meals can be adjusted ±200 calories based on training intensity</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution successfully meets all three mandatory requirements with clear presentation of daily totals, macronutrient breakdown, and detailed meals with portions and timing. The meal plan is compact and well-organized across 6 eating occasions. However, there is a minor mathematical inconsistency in the macronutrient percentages (actual carbs appear closer to 55% than stated 60%), and the plan lacks personalization to the athlete's specific body composition. Despite these secondary issues, the solution comprehensively addresses the core task of creating a marathon preparation meal plan with appropriate carbohydrate loading and recovery nutrition.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a strength/power athlete (weightlifter) focusing on protein intake, meal timing around workouts, and muscle recovery with budget constraints</td>
+                <td class="prompt-inputs"><strong>Height:</strong> 180<br><strong>Weight:</strong> 85<br><strong>goal:</strong> Maximize muscle gain and strength performance for weightlifting competition in 3 months<br><strong>restrictions:</strong> Budget constraint of $15 per day, no shellfish allergy</td>
+                <td class="criteria">• Meal plan contains at least 4 meals/snacks with protein-focused timing around workout<br>• Daily protein intake meets minimum 1.6g per kg body weight (136g)<br>• All meals are budget-friendly and realistic for $15/day limit<br>• Plan supports muscle recovery with appropriate macronutrient distribution</td>
+                <td class="output"><pre># One-Day Muscle-Building Meal Plan for Weightlifter
+**Budget: $15/day | Target: 3,100 calories | Protein: 200g | Carbs: 375g | Fat: 85g**
+
+---
+
+## BREAKFAST (7:00 AM)
+**Oatmeal Power Bowl**
+- Rolled oats: 80g
+- Whole milk: 250ml
+- Banana: 120g
+- Peanut butter: 20g
+- Honey: 15g
+
+**Nutrition:** 620 cal | P: 18g | C: 92g | F: 18g
+**Cost:** ~$2.10
+
+---
+
+## SNACK 1 (10:30 AM)
+**Protein & Carbs**
+- Greek yogurt (plain): 200g
+- Granola: 40g
+- Apple: 150g
+
+**Nutrition:** 420 cal | P: 20g | C: 62g | F: 8g
+**Cost:** ~$1.80
+
+---
+
+## LUNCH (1:00 PM)
+**Chicken & Rice**
+- Chicken breast (cooked): 200g
+- White rice (cooked): 250g
+- Olive oil: 10ml
+- Broccoli: 100g
+- Salt & pepper
+
+**Nutrition:** 750 cal | P: 55g | C: 85g | F: 12g
+**Cost:** ~$3.50
+
+---
+
+## SNACK 2 (4:00 PM)
+**Pre-Workout Fuel**
+- Whole wheat bread: 2 slices (60g)
+- Almond butter: 25g
+- Banana: 100g
+
+**Nutrition:** 420 cal | P: 15g | C: 48g | F: 18g
+**Cost:** ~$1.60
+
+---
+
+## DINNER (7:00 PM)
+**Ground Beef Pasta**
+- Ground beef (93/7 lean): 180g
+- Spaghetti pasta (cooked): 200g
+- Canned tomato sauce: 100g
+- Garlic, onion, spices
+
+**Nutrition:** 750 cal | P: 52g | C: 72g | F: 20g
+**Cost:** ~$3.20
+
+---
+
+## EVENING SNACK (9:30 PM)
+**Recovery Drink**
+- Whole milk: 250ml
+- Whey protein powder: 30g
+- Oats (dry): 20g
+
+**Nutrition:** 240 cal | P: 25g | C: 16g | F: 9g
+**Cost:** ~$2.80
+
+---
+
+## DAILY TOTALS
+| Metric | Target | Actual |
+|--------|--------|--------|
+| **Calories** | 3,100 | 3,200 |
+| **Protein** | 200g | 185g |
+| **Carbs** | 375g | 375g |
+| **Fat** | 85g | 85g |
+| **Total Cost** | $15.00 | $14.90 ✓ |
+
+---
+
+## KEY RECOMMENDATIONS
+
+✅ **Hydration:** Drink 3-4 liters of water daily
+✅ **Timing:** Eat snack 2 within 2 hours before weightlifting session
+✅ **Supplementation:** Consider creatine monohydrate ($0.10/day) for strength gains
+✅ **Flexibility:** Swap chicken/beef with canned tuna, eggs, or cottage cheese for variety
+✅ **Adjustments:** Add 300-400 calories if plateauing in 6 weeks
+
+---
+
+*Note: This plan emphasizes whole foods with high protein density while maximizing budget efficiency. Portion sizes can be adjusted based on actual training days.*</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution comprehensively addresses all mandatory requirements with exact portions, timing, and complete nutritional data. It provides 6 meals/snacks with strong protein distribution and stays within budget. The secondary criteria are largely met: protein intake (185g) far exceeds the 136g minimum, macronutrient distribution supports muscle recovery, and meals are realistic and budget-friendly. However, the stated 200g protein target is not achieved (185g actual), and workout timing assumptions lack clarity. These are minor deficiencies that don't undermine the core quality of the plan but prevent a perfect score.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a sport-specific athlete (swimmer) needing low-bloating meals, high energy density, and hydration strategies integrated into the daily plan</td>
+                <td class="prompt-inputs"><strong>Height:</strong> 180<br><strong>Weight:</strong> 78<br><strong>goal:</strong> High-energy 1-day meal plan for competitive swimming with low bloating and integrated hydration<br><strong>restrictions:</strong> Lactose intolerant, no nuts</td>
+                <td class="criteria">• Meal plan covers breakfast, lunch, dinner, and snacks with appropriate timing for training<br>• All meals are low in fiber and fat to minimize bloating before/after swimming<br>• Hydration strategy is explicitly integrated throughout the day with specific fluid intake recommendations<br>• Energy density is appropriate for a 78kg swimmer with high caloric expenditure</td>
+                <td class="output"><pre># High-Performance Swimming Meal Plan
+## For 180cm, 78kg Competitive Athlete
+
+---
+
+## DAILY CALORIC TARGET: 3,200 calories
+**Macronutrient Breakdown:**
+- Protein: 140g (17.5%)
+- Carbohydrates: 420g (52.5%)
+- Fat: 80g (22.5%)
+- Fiber: 30g (low-bloat focus)
+
+---
+
+## MEAL SCHEDULE
+
+### **BREAKFAST** (6:30 AM) | 650 cal | P: 28g | C: 95g | F: 15g
+- Oatmeal (50g dry) with water
+- Banana (150g)
+- Honey (15g)
+- Rice milk (240ml)
+- Olive oil drizzle (5ml)
+- Salt pinch
+
+*Prep tip: Cook oats 10 mins before, aids digestion*
+
+---
+
+### **SNACK 1** (9:00 AM) | 300 cal | P: 8g | C: 65g | F: 3g
+- White rice cakes (40g / 3 cakes)
+- Jam (25g)
+- Orange juice (200ml)
+
+*Timing: 3 hours before training*
+
+---
+
+### **LUNCH** (12:00 PM) | 850 cal | P: 45g | C: 110g | F: 20g
+- Grilled chicken breast (150g)
+- White rice (180g cooked)
+- Steamed carrots (100g)
+- Bell peppers (80g)
+- Olive oil (10ml)
+- Sea salt to taste
+
+*Low fiber white rice prevents bloating before competition*
+
+---
+
+### **PRE-WORKOUT SNACK** (3:00 PM - 1 hour before training) | 280 cal | P: 12g | C: 50g | F: 4g
+- Bagel, plain (70g)
+- Honey (20g)
+- Rice milk (200ml)
+
+---
+
+### **DINNER** (7:30 PM - Post-workout recovery) | 920 cal | P: 52g | C: 100g | F: 28g
+- Grilled salmon fillet (180g)
+- Sweet potato (200g, baked)
+- Broccoli (120g, steamed)
+- Olive oil (12ml)
+- Lemon juice
+
+*High omega-3s support recovery; high carbs replenish glycogen*
+
+---
+
+### **HYDRATION STRATEGY**
+
+| Time | Drink | Amount |
+|------|-------|--------|
+| 6:00 AM | Water + electrolytes | 500ml |
+| During breakfast | Water | 250ml |
+| Before training | Water | 400ml |
+| During 90-min swim | Sports drink* | 200ml sips |
+| Post-workout (30 min) | Coconut water | 300ml |
+| With meals | Water | 250ml each |
+| Evening | Water | 500ml |
+| **TOTAL** | | **3.4L** |
+
+**Sports drink recipe:** 6g glucose powder + 0.5g salt per 100ml water (homemade = budget-friendly)
+
+---
+
+## NUTRITIONAL SUMMARY
+| Nutrient | Amount | Status |
+|----------|--------|--------|
+| **Calories** | 3,200 | ✓ High-energy |
+| **Protein** | 140g | ✓ Recovery |
+| **Carbs** | 420g | ✓ Endurance fuel |
+| **Fat** | 80g | ✓ Hormone support |
+| **Fiber** | ~28g | ✓ Low-bloat |
+| **Lactose** | 0g | ✓ Restriction met |
+| **Nuts** | 0g | ✓ Restriction met |
+
+---
+
+## COST ESTIMATE (per day)
+- Chicken/salmon: $4.50
+- Rice/grains: $1.20
+- Vegetables: $2.80
+- Fruits/honey: $1.50</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution fully satisfies all three mandatory requirements with precision: daily calorie intake is clearly stated (3,200 cal), macronutrient breakdown is provided both in grams and percentages, and meals include exact foods, portions, and specific timings. The hydration strategy is exceptionally detailed and well-integrated. However, there are minor inconsistencies between stated goals and execution—the fiber level contradicts the low-bloating objective, and pre-workout timing could be optimized. These are secondary criterion issues that don't violate mandatory requirements but represent missed optimization opportunities for a competitive athlete.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

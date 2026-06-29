@@ -1,0 +1,65 @@
+[
+  {
+    "output": "# One-Day Marathon Preparation Meal Plan\n**Target: 3,500 calories | Macros: 525g carbs | 130g protein | 95g fat**\n\n---\n\n## BREAKFAST (7:00 AM) - 850 calories\n**Pre-training fuel**\n\n- Oatmeal: 100g dry (350 cal)\n- Banana: 150g (134 cal)\n- Honey: 30g (92 cal)\n- Whole milk: 250ml (160 cal)\n- Almonds: 20g (120 cal)\n\n**Macros:** 135g carbs | 15g protein | 12g fat\n\n---\n\n## MID-MORNING SNACK (10:00 AM) - 450 calories\n**During/post-short run**\n\n- White bread: 80g (200 cal)\n- Peanut butter: 30g (180 cal)\n- Banana: 100g (89 cal)\n- Sports drink: 250ml (50 cal)\n\n**Macros:** 65g carbs | 10g protein | 8g fat\n\n---\n\n## LUNCH (1:00 PM) - 900 calories\n**Main carb-loading meal**\n\n- Jasmine rice: 200g cooked (260 cal)\n- Chicken breast: 150g grilled (245 cal)\n- Olive oil: 15ml (135 cal)\n- Mixed vegetables (carrots, broccoli): 150g (50 cal)\n- Low-fat yogurt: 200g (100 cal)\n- Orange juice: 300ml (110 cal)\n\n**Macros:** 145g carbs | 45g protein | 18g fat\n\n---\n\n## AFTERNOON SNACK (4:00 PM) - 500 calories\n**Energy boost before evening workout**\n\n- Rice cakes: 60g (240 cal)\n- Banana: 150g (134 cal)\n- Honey: 20g (61 cal)\n- Apple juice: 200ml (94 cal)\n\n**Macros:** 120g carbs | 5g protein | 1g fat\n\n---\n\n## DINNER (7:00 PM) - 700 calories\n**Recovery and repair**\n\n- Pasta (whole wheat): 150g cooked (200 cal)\n- Ground turkey: 120g lean (220 cal)\n- Tomato sauce: 100g (25 cal)\n- Parmesan cheese: 20g (80 cal)\n- Olive oil: 10ml (90 cal)\n- Side salad with dressing: 85 cal\n\n**Macros:** 60g carbs | 50g protein | 38g fat\n\n---\n\n## EVENING SNACK (9:30 PM) - 100 calories\n**Sleep-friendly recovery**\n\n- Greek yogurt (plain): 150g (100 cal)\n\n**Macros:** 0g carbs | 5g protein | 0g fat\n\n---\n\n## DAILY TOTALS\n| Nutrient | Amount |\n|----------|--------|\n| **Calories** | **3,500** |\n| **Carbohydrates** | 525g (60%) |\n| **Protein** | 130g (15%) |\n| **Fat** | 95g (25%) |\n\n---\n\n## KEY NOTES FOR MARATHON PREP\n\u2713 **Carb timing:** Heavy carbs at breakfast, lunch, and snacks for glycogen storage  \n\u2713 **Hydration:** Drink 3-4 liters of water daily + electrolyte drink during training  \n\u2713 **Recovery window:** Yogurt snack provides casein protein for overnight muscle repair  \n\u2713 **Budget-friendly:** Uses affordable staples (rice, pasta, eggs, chicken, bananas)  \n\u2713 **Adaptable:** Meals can be adjusted \u00b1200 calories based on training intensity",
+    "test_case": {
+      "prompt_inputs": {
+        "Height": "180",
+        "Weight": "75",
+        "goal": "Marathon preparation with carbohydrate loading and recovery nutrition targeting 3500+ calories",
+        "restrictions": "None"
+      },
+      "solution_criteria": [
+        "Meal plan totals 3500+ calories across all meals and snacks",
+        "Includes high carbohydrate content (55-65% of total calories) appropriate for endurance athlete",
+        "Contains 4-5 eating occasions (breakfast, lunch, dinner, and 1-2 snacks) formatted compactly",
+        "Incorporates lean protein and healthy fats for recovery and satiety"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring maximum carbohydrate loading and recovery nutrition with specific caloric targets (3500+ calories)"
+    },
+    "score": 8,
+    "reasoning": "The solution successfully meets all three mandatory requirements with clear presentation of daily totals, macronutrient breakdown, and detailed meals with portions and timing. The meal plan is compact and well-organized across 6 eating occasions. However, there is a minor mathematical inconsistency in the macronutrient percentages (actual carbs appear closer to 55% than stated 60%), and the plan lacks personalization to the athlete's specific body composition. Despite these secondary issues, the solution comprehensively addresses the core task of creating a marathon preparation meal plan with appropriate carbohydrate loading and recovery nutrition."
+  },
+  {
+    "output": "# One-Day Muscle-Building Meal Plan for Weightlifter\n**Budget: $15/day | Target: 3,100 calories | Protein: 200g | Carbs: 375g | Fat: 85g**\n\n---\n\n## BREAKFAST (7:00 AM)\n**Oatmeal Power Bowl**\n- Rolled oats: 80g\n- Whole milk: 250ml\n- Banana: 120g\n- Peanut butter: 20g\n- Honey: 15g\n\n**Nutrition:** 620 cal | P: 18g | C: 92g | F: 18g\n**Cost:** ~$2.10\n\n---\n\n## SNACK 1 (10:30 AM)\n**Protein & Carbs**\n- Greek yogurt (plain): 200g\n- Granola: 40g\n- Apple: 150g\n\n**Nutrition:** 420 cal | P: 20g | C: 62g | F: 8g\n**Cost:** ~$1.80\n\n---\n\n## LUNCH (1:00 PM)\n**Chicken & Rice**\n- Chicken breast (cooked): 200g\n- White rice (cooked): 250g\n- Olive oil: 10ml\n- Broccoli: 100g\n- Salt & pepper\n\n**Nutrition:** 750 cal | P: 55g | C: 85g | F: 12g\n**Cost:** ~$3.50\n\n---\n\n## SNACK 2 (4:00 PM)\n**Pre-Workout Fuel**\n- Whole wheat bread: 2 slices (60g)\n- Almond butter: 25g\n- Banana: 100g\n\n**Nutrition:** 420 cal | P: 15g | C: 48g | F: 18g\n**Cost:** ~$1.60\n\n---\n\n## DINNER (7:00 PM)\n**Ground Beef Pasta**\n- Ground beef (93/7 lean): 180g\n- Spaghetti pasta (cooked): 200g\n- Canned tomato sauce: 100g\n- Garlic, onion, spices\n\n**Nutrition:** 750 cal | P: 52g | C: 72g | F: 20g\n**Cost:** ~$3.20\n\n---\n\n## EVENING SNACK (9:30 PM)\n**Recovery Drink**\n- Whole milk: 250ml\n- Whey protein powder: 30g\n- Oats (dry): 20g\n\n**Nutrition:** 240 cal | P: 25g | C: 16g | F: 9g\n**Cost:** ~$2.80\n\n---\n\n## DAILY TOTALS\n| Metric | Target | Actual |\n|--------|--------|--------|\n| **Calories** | 3,100 | 3,200 |\n| **Protein** | 200g | 185g |\n| **Carbs** | 375g | 375g |\n| **Fat** | 85g | 85g |\n| **Total Cost** | $15.00 | $14.90 \u2713 |\n\n---\n\n## KEY RECOMMENDATIONS\n\n\u2705 **Hydration:** Drink 3-4 liters of water daily\n\u2705 **Timing:** Eat snack 2 within 2 hours before weightlifting session\n\u2705 **Supplementation:** Consider creatine monohydrate ($0.10/day) for strength gains\n\u2705 **Flexibility:** Swap chicken/beef with canned tuna, eggs, or cottage cheese for variety\n\u2705 **Adjustments:** Add 300-400 calories if plateauing in 6 weeks\n\n---\n\n*Note: This plan emphasizes whole foods with high protein density while maximizing budget efficiency. Portion sizes can be adjusted based on actual training days.*",
+    "test_case": {
+      "prompt_inputs": {
+        "Height": "180",
+        "Weight": "85",
+        "goal": "Maximize muscle gain and strength performance for weightlifting competition in 3 months",
+        "restrictions": "Budget constraint of $15 per day, no shellfish allergy"
+      },
+      "solution_criteria": [
+        "Meal plan contains at least 4 meals/snacks with protein-focused timing around workout",
+        "Daily protein intake meets minimum 1.6g per kg body weight (136g)",
+        "All meals are budget-friendly and realistic for $15/day limit",
+        "Plan supports muscle recovery with appropriate macronutrient distribution"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a strength/power athlete (weightlifter) focusing on protein intake, meal timing around workouts, and muscle recovery with budget constraints"
+    },
+    "score": 8,
+    "reasoning": "The solution comprehensively addresses all mandatory requirements with exact portions, timing, and complete nutritional data. It provides 6 meals/snacks with strong protein distribution and stays within budget. The secondary criteria are largely met: protein intake (185g) far exceeds the 136g minimum, macronutrient distribution supports muscle recovery, and meals are realistic and budget-friendly. However, the stated 200g protein target is not achieved (185g actual), and workout timing assumptions lack clarity. These are minor deficiencies that don't undermine the core quality of the plan but prevent a perfect score."
+  },
+  {
+    "output": "# High-Performance Swimming Meal Plan\n## For 180cm, 78kg Competitive Athlete\n\n---\n\n## DAILY CALORIC TARGET: 3,200 calories\n**Macronutrient Breakdown:**\n- Protein: 140g (17.5%)\n- Carbohydrates: 420g (52.5%)\n- Fat: 80g (22.5%)\n- Fiber: 30g (low-bloat focus)\n\n---\n\n## MEAL SCHEDULE\n\n### **BREAKFAST** (6:30 AM) | 650 cal | P: 28g | C: 95g | F: 15g\n- Oatmeal (50g dry) with water\n- Banana (150g)\n- Honey (15g)\n- Rice milk (240ml)\n- Olive oil drizzle (5ml)\n- Salt pinch\n\n*Prep tip: Cook oats 10 mins before, aids digestion*\n\n---\n\n### **SNACK 1** (9:00 AM) | 300 cal | P: 8g | C: 65g | F: 3g\n- White rice cakes (40g / 3 cakes)\n- Jam (25g)\n- Orange juice (200ml)\n\n*Timing: 3 hours before training*\n\n---\n\n### **LUNCH** (12:00 PM) | 850 cal | P: 45g | C: 110g | F: 20g\n- Grilled chicken breast (150g)\n- White rice (180g cooked)\n- Steamed carrots (100g)\n- Bell peppers (80g)\n- Olive oil (10ml)\n- Sea salt to taste\n\n*Low fiber white rice prevents bloating before competition*\n\n---\n\n### **PRE-WORKOUT SNACK** (3:00 PM - 1 hour before training) | 280 cal | P: 12g | C: 50g | F: 4g\n- Bagel, plain (70g)\n- Honey (20g)\n- Rice milk (200ml)\n\n---\n\n### **DINNER** (7:30 PM - Post-workout recovery) | 920 cal | P: 52g | C: 100g | F: 28g\n- Grilled salmon fillet (180g)\n- Sweet potato (200g, baked)\n- Broccoli (120g, steamed)\n- Olive oil (12ml)\n- Lemon juice\n\n*High omega-3s support recovery; high carbs replenish glycogen*\n\n---\n\n### **HYDRATION STRATEGY**\n\n| Time | Drink | Amount |\n|------|-------|--------|\n| 6:00 AM | Water + electrolytes | 500ml |\n| During breakfast | Water | 250ml |\n| Before training | Water | 400ml |\n| During 90-min swim | Sports drink* | 200ml sips |\n| Post-workout (30 min) | Coconut water | 300ml |\n| With meals | Water | 250ml each |\n| Evening | Water | 500ml |\n| **TOTAL** | | **3.4L** |\n\n**Sports drink recipe:** 6g glucose powder + 0.5g salt per 100ml water (homemade = budget-friendly)\n\n---\n\n## NUTRITIONAL SUMMARY\n| Nutrient | Amount | Status |\n|----------|--------|--------|\n| **Calories** | 3,200 | \u2713 High-energy |\n| **Protein** | 140g | \u2713 Recovery |\n| **Carbs** | 420g | \u2713 Endurance fuel |\n| **Fat** | 80g | \u2713 Hormone support |\n| **Fiber** | ~28g | \u2713 Low-bloat |\n| **Lactose** | 0g | \u2713 Restriction met |\n| **Nuts** | 0g | \u2713 Restriction met |\n\n---\n\n## COST ESTIMATE (per day)\n- Chicken/salmon: $4.50\n- Rice/grains: $1.20\n- Vegetables: $2.80\n- Fruits/honey: $1.50",
+    "test_case": {
+      "prompt_inputs": {
+        "Height": "180",
+        "Weight": "78",
+        "goal": "High-energy 1-day meal plan for competitive swimming with low bloating and integrated hydration",
+        "restrictions": "Lactose intolerant, no nuts"
+      },
+      "solution_criteria": [
+        "Meal plan covers breakfast, lunch, dinner, and snacks with appropriate timing for training",
+        "All meals are low in fiber and fat to minimize bloating before/after swimming",
+        "Hydration strategy is explicitly integrated throughout the day with specific fluid intake recommendations",
+        "Energy density is appropriate for a 78kg swimmer with high caloric expenditure"
+      ],
+      "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+      "scenario": "Testing with a sport-specific athlete (swimmer) needing low-bloating meals, high energy density, and hydration strategies integrated into the daily plan"
+    },
+    "score": 8,
+    "reasoning": "The solution fully satisfies all three mandatory requirements with precision: daily calorie intake is clearly stated (3,200 cal), macronutrient breakdown is provided both in grams and percentages, and meals include exact foods, portions, and specific timings. The hydration strategy is exceptionally detailed and well-integrated. However, there are minor inconsistencies between stated goals and execution\u2014the fiber level contradicts the low-bloating objective, and pre-workout timing could be optimized. These are secondary criterion issues that don't violate mandatory requirements but represent missed optimization opportunities for a competitive athlete."
+  }
+]

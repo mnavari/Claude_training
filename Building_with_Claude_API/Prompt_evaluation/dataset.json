@@ -1,0 +1,14 @@
+[
+  {
+    "task": "Parse an AWS S3 bucket name from a full S3 URI (e.g., 's3://my-bucket/path/to/file.txt') and extract only the bucket name",
+    "format": "regex"
+  },
+  {
+    "task": "Create a JSON CloudFormation template snippet that defines an IAM role with a trust relationship allowing EC2 service to assume it",
+    "format": "json"
+  },
+  {
+    "task": "Write a Python function that validates if a given string is a valid AWS ARN (Amazon Resource Name) format",
+    "format": "python"
+  }
+]

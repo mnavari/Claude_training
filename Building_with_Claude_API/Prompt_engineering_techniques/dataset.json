@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "Height": "180",
+      "Weight": "75",
+      "goal": "Marathon preparation with carbohydrate loading and recovery nutrition targeting 3500+ calories",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan totals 3500+ calories across all meals and snacks",
+      "Includes high carbohydrate content (55-65% of total calories) appropriate for endurance athlete",
+      "Contains 4-5 eating occasions (breakfast, lunch, dinner, and 1-2 snacks) formatted compactly",
+      "Incorporates lean protein and healthy fats for recovery and satiety"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring maximum carbohydrate loading and recovery nutrition with specific caloric targets (3500+ calories)"
+  },
+  {
+    "prompt_inputs": {
+      "Height": "180",
+      "Weight": "78",
+      "goal": "High-energy 1-day meal plan for competitive swimming with low bloating and integrated hydration",
+      "restrictions": "Lactose intolerant, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan covers breakfast, lunch, dinner, and snacks with appropriate timing for training",
+      "All meals are low in fiber and fat to minimize bloating before/after swimming",
+      "Hydration strategy is explicitly integrated throughout the day with specific fluid intake recommendations",
+      "Energy density is appropriate for a 78kg swimmer with high caloric expenditure"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport-specific athlete (swimmer) needing low-bloating meals, high energy density, and hydration strategies integrated into the daily plan"
+  },
+  {
+    "prompt_inputs": {
+      "Height": "180",
+      "Weight": "85",
+      "goal": "Maximize muscle gain and strength performance for weightlifting competition in 3 months",
+      "restrictions": "Budget constraint of $15 per day, no shellfish allergy"
+    },
+    "solution_criteria": [
+      "Meal plan contains at least 4 meals/snacks with protein-focused timing around workout",
+      "Daily protein intake meets minimum 1.6g per kg body weight (136g)",
+      "All meals are budget-friendly and realistic for $15/day limit",
+      "Plan supports muscle recovery with appropriate macronutrient distribution"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) focusing on protein intake, meal timing around workouts, and muscle recovery with budget constraints"
+  }
+]
